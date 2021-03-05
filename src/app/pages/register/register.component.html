@@ -1,1 +1,24 @@
-<p>register works!</p>
+<div class='form-square'>
+    <div class='form-square-background'>
+        <form class='registerAuth-form'>
+            <div class='form-tittle'>
+                <span>REGISTER</span>
+            </div>
+            <div class='group1'>
+                <input type="text" placeholder="Enter your name" formControlName="displayName" required><span class='bar'></span>
+                <label for=''>NAME</label>
+            </div>
+            <div class='group2'>
+                <input type="text" placeholder="Enter your email" formControlName="email" required><span class='bar'></span>
+                <label for=''>EMAIL</label>
+            </div>
+            <div class='group3'>
+                <input type="text" placeholder="Enter your password" formControlName="password" required><span class='bar'></span>
+                <label for=''>PASSWORD</label>
+            </div>
+            <button class='withGoogle' type="button" (click) = "registerGoogle()">REGISTER WITH GOOGLE</button>
+            <button class='send-button' type='button'>SUBMIT</button>
+            
+        </form>
+    </div>
+</div>
