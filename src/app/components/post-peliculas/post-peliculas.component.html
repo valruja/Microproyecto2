@@ -1,9 +1,10 @@
 <div class='postCard'>
     <div class='separatorCard'></div>
-    <div class='contentCard'>
+    <div class='contentCard' routerLink = '/Detalle'>
         <p>TITLE: {{post.title}}</p>
         <p>LANGUAGE: {{post.original_language}}</p>
         <p>POPULARITY: {{post.popularity}}</p>
         <img src="{{post.poster_path}}" alt="foto">
+        <button class="botones" *ngIf="user">ADD TO FAVORITE!</button>
     </div>
 </div>

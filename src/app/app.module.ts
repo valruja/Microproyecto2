@@ -21,6 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { PostPeliculasComponent } from './components/post-peliculas/post-peliculas.component';
+import { ReservarComponent } from './pages/reservar/reservar.component';
+import { ReservasComponent } from './pages/reservas/reservas.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { PostPeliculasComponent } from './components/post-peliculas/post-pelicul
     LoginComponent,
     RegisterComponent,
     PostPeliculasComponent,
+    ReservarComponent,
+    ReservasComponent,
   ],
   imports: [
     BrowserModule,

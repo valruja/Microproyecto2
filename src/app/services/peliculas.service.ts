@@ -11,6 +11,7 @@ export class PeliculasService {
   getData(){
     let page = 1;
     let url = 'https://api.themoviedb.org/3/discover/movie?api_key=b4699a9de35f57cb87fbcb373680a922&page=' + `${page}`;
+    page =+1;
     return this.http.get(url);
   }
 

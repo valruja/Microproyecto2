@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PeliculasService } from 'src/app/services/peliculas.service';
 
 @Component({
   selector: 'app-lista-pelicula',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaPeliculaComponent implements OnInit {
 
-  constructor() { }
+  title = 'pelicula';
+  data: any;
+  constructor(private pelicula: PeliculasService) {
+    this.pelicula.getData().subscribe((data)=>{
+      console.warn(data);
+      this.data = data;
+    })
+   }
 
   ngOnInit(): void {
   }
 
-}
+  NextPage(): void{
+    this.pelicula.getData().subscribe((data)=>{
+      console.warn(data);
+      this.data = data;
+  })
+}}
+

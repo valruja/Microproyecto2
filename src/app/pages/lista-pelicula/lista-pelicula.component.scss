@@ -1,0 +1,38 @@
+.search-bar{
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 50%;
+    border-radius: 12px;
+    height: 40px;
+    outline: none;
+    border-color: navy;
+}
+
+.boton{
+    margin-left: 20px;
+    padding: 10px;
+    background: navy;
+    border-radius: 12px;
+    border: none;
+    width: 100px;
+    color: white;
+}
+
+.boton-next{
+    margin-left: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: navy;
+    border-radius: 12px;
+    border: none;
+    width: 100px;
+    color: white;
+}
+
+.peliculas{
+    margin: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
