@@ -14,7 +14,6 @@ const routes: Routes = [
   { path: 'Favorites', component: FavoritosComponent },
   { path: 'Register', component: RegisterComponent },
   { path: 'Detalle', component: DetalleComponent },
-
 ];
 
 @NgModule({
