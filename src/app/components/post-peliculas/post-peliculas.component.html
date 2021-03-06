@@ -1,10 +1,9 @@
 <div class='postCard'>
     <div class='separatorCard'></div>
     <div class='contentCard' routerLink = '/Detalle'>
-        <p>TITLE: {{post.title}}</p>
-        <p>LANGUAGE: {{post.original_language}}</p>
-        <p>POPULARITY: {{post.popularity}}</p>
-        <img src="{{post.poster_path}}" alt="foto">
-        <button class="botones" *ngIf="user">ADD TO FAVORITE!</button>
+        <p>TITLE: {{post?.title}}</p>
+        <p>LANGUAGE: {{post?.original_language}}</p>
+        <p>POPULARITY: {{post?.popularity}}</p>
+        <img widtj="400px" height="200px"src="https://image.tmdb.org/t/p/w500/{{post?.poster_path}}" alt="foto">
     </div>
 </div>
