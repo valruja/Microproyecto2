@@ -20,6 +20,7 @@ import { environment } from 'src/environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
+import { PostPeliculasComponent } from './components/post-peliculas/post-peliculas.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { HttpClientModule} from '@angular/common/http';
     FavoritosComponent,
     LoginComponent,
     RegisterComponent,
+    PostPeliculasComponent,
   ],
   imports: [
     BrowserModule,

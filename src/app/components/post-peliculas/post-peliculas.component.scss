@@ -1,0 +1,38 @@
+*{
+    color: navy;
+}
+
+.postCard{
+    height: 300px;
+    width: 200px;
+    border-radius: 7px;
+    box-shadow: 0 0 3px 0 salmon;
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+
+.postCard .separatorCard{
+    height: 1px;
+    width: 100%;
+    background-color:navy;
+    margin-bottom: 10px;
+}
+
+.postCard .conteentCard{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.favorite{
+    text-align: end;
+}

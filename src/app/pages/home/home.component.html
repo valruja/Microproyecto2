@@ -3,18 +3,11 @@
     <button class="boton">SEARCH</button>
 </div>
 
-<div class="table">
-<table border="1">
-    <tr>
-        <td>Title</td>
-        <td>id</td>
-        <td>poster</td>
-        <td>popularity</td>
-    </tr>
-    <tr *ngFor= "let item of data.results">
-        <td>{{item.title}}</td>
-        <td>{{item.poster_path}}</td>
-        <td>{{item.popularity}}</td>
-    </tr>
-</table>
+<app-post-peliculas></app-post-peliculas>
+
+<div class="peliculas">
+    <ng-container *ngFor="let item of data.results">
+        <app-post-peliculas [post]="item"></app-post-peliculas>
+    </ng-container>
 </div>
+
