@@ -1,6 +1,6 @@
 <div class='form-square'>
     <div class='form-square-background'>
-        <form class='loginform'>
+        <form class='loginform' [formGroup]="loginForm">
             <div class='form-title'>
                 <span>LOG IN</span>
             </div>
@@ -9,10 +9,10 @@
                 <label for=''>EMAIL</label>
             </div>
             <div class='group2'>
-                <input type="text" placeholder="Enter your password" formControlName="password" required><span class='bar'></span>
+                <input type="password" placeholder="Enter your password" formControlName="password" required><span class='bar'></span>
                 <label for=''>PASSWORD</label>
             </div>
-            <button class='send-button' type='button'>LOG IN</button>
+            <button class='send-button' type='button' (click)='handleLogin()'>LOG IN</button>
         </form>
     </div>
 </div>
