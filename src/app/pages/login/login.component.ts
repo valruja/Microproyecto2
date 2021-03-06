@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
       password: this.loginForm.get('password').value,
     }
 
-    this.authService.logInWithEmail(formInfo.email,formInfo.password).then(  (user)=>{
+    this.authService.logInWithEmail(formInfo.email,formInfo.password).then( async (user)=>{
       if (user){
         this.route.navigate(['/Home'])
       }

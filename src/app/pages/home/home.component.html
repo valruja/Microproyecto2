@@ -2,3 +2,19 @@
     <input class="search-bar" type="search" placeholder="Search for movie...">
     <button class="boton">SEARCH</button>
 </div>
+
+<div class="table">
+<table border="1">
+    <tr>
+        <td>Title</td>
+        <td>id</td>
+        <td>poster</td>
+        <td>popularity</td>
+    </tr>
+    <tr *ngFor= "let item of data.results">
+        <td>{{item.title}}</td>
+        <td>{{item.poster_path}}</td>
+        <td>{{item.popularity}}</td>
+    </tr>
+</table>
+</div>

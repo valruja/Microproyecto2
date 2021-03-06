@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PeliculasService } from 'src/app/services/peliculas.service';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  title = 'pelicula';
+  data: any;
+  constructor(private pelicula: PeliculasService) {
+    this.pelicula.getData().subscribe((data)=>{
+      console.warn(data);
+      this.data = data;
+    })
+   }
 
   ngOnInit(): void {
   }
