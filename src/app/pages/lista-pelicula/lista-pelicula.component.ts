@@ -20,10 +20,5 @@ export class ListaPeliculaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  NextPage(): void{
-    this.pelicula.getData().subscribe((data)=>{
-      console.warn(data);
-      this.data = data;
-  })
-}}
+}
 
